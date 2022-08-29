@@ -6,21 +6,7 @@ library/
 temp/
 local/
 node_modules/
-remote-assets/
-build1/jsb-link/src/
-build1/jsb-link/src/
-build1/jsb-link/publish/
-build1/jsb-link/frameworks/runtime-src/proj.android-studio/app/.cxx/
-build1/jsb-link/frameworks/runtime-src/proj.android-studio/runtime-src-proj.android-studio.iml 
-build1/jsb-link/frameworks/runtime-src/proj.android-studio/app/java_pid16209.hprof
-build1/jsb-link/frameworks/runtime-src/proj.android-studio/app/google-services.json
-
-build/jsb-binary/update.exe
-build/jsb-binary/res
-build/jsb-binary/script
-build/jsb-binary/src
-/build/jsb-binary/simulator
-/build/jsb-binary/frameworks/runtime-src/proj.android-studio/gradle
+remote-assets/build/
 packages/
 
 #/////////////////////////////////////////////////////////////////////////////
