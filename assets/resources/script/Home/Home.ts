@@ -58,5 +58,11 @@ export default class Home extends cc.Component {
 
     clickItem(e) {
         let idx = e.target.idx
+
+        let d = HomeCfg[idx]
+
+        if (d.levelLimit > PlayerInfo.level) { return }
+
+        UiMgr.show(d.pfb)
     }
 }

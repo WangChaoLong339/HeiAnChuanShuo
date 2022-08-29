@@ -16,6 +16,6 @@ export default class scene extends cc.Component {
     }
 
     start() {
-        UiMgr.show('Hall')
+        UiMgr.show('Home')
     }
 }

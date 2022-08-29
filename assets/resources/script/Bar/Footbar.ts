@@ -41,8 +41,8 @@ export default class Footbar extends cc.Component {
     }
 
     clickItem(e) {
-        if (this.currPageIdx == e.target.idx) { return }
-        UiMgr.close(HallCfg[this.currPageIdx].pfb)
+        // if (this.currPageIdx == e.target.idx) { return }
+        // UiMgr.close(HallCfg[this.currPageIdx].pfb)
         this.currPageIdx = e.target.idx;
         this.updateButtons();
 

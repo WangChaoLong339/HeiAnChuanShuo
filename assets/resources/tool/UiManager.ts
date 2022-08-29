@@ -11,17 +11,21 @@ export class UiManager extends cc.Component {
 
     uiPrefabCache: Object
     propPrefabCache: Object
+    lastPrefab: any
     onLoad() {
         window.UiMgr = this;
 
         this.uiPrefabCache = {};
         this.propPrefabCache = {};
+        this.lastPrefab = null;
     }
 
     show(name, args?) {
         cc.log(`show prefab: ${name}`);
         let pb = this.uiPrefabCache[name];
         if (pb) {
+            if (this.lastPrefab) { this.lastPrefab.setSiblingIndex(0) }
+            pb.setSiblingIndex(this.node.childrenCount)
             pb.active = true;
             pb.onenter && pb.onenter(args);
         } else {
